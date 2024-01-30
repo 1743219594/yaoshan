@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background: #f1f3f4;
+  padding: 16rpx 0;
+}
+.card {
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.card .title {
+  padding: 20rpx 30rpx;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.card .title .add {
+  background-color: #09b980;
+  border-radius: 50%;
+  width: 1.5rem;
+  text-align: center;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.card .title .delete {
+  background-color: #cc463d;
+  border-radius: 50%;
+  width: 1.5rem;
+  text-align: center;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.card .row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 30rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 10px;
+}
+.card .row .tit {
+  flex-shrink: 0;
+  width: 160rpx;
+  font-size: 25rpx;
+  color: #303133;
+}
+.card .row .input {
+  flex: 1;
+  font-size: 25rpx;
+  color: #303133;
+}
+.card .row .icon-shouhuodizhi {
+  font-size: 30rpx;
+  color: #909399;
+}
+.default-row {
+  margin-top: 16rpx;
+}
+.default-row .tit {
+  flex: 1;
+}
+.default-row switch {
+  -webkit-transform: translateX(16rpx) scale(0.9);
+          transform: translateX(16rpx) scale(0.9);
+}
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 690rpx;
+  height: 80rpx;
+  margin: 30rpx auto;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #09b980;
+  border-radius: 10rpx;
+  box-shadow: 1px 2px 5px #09b980;
+}
+.del-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 690rpx;
+  height: 80rpx;
+  margin: 60rpx auto;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #fa436a;
+  border-radius: 10rpx;
+  box-shadow: 1px 2px 5px rgba(219, 63, 96, 0.4);
+}
+.tab {
+  padding: 20rpx 0;
+  font-size: 32rpx;
+}
+.tab.active {
+  color: #f00;
+}
+.result {
+  margin-top: 100rpx;
+  font-size: 32rpx;
+}
+

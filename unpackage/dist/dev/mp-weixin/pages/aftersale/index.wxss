@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background: #f8f8f8;
+  padding-top: 16rpx;
+}
+.order-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  background: #fff;
+  margin-top: 16rpx;
+  /* 多条商品 */
+  /* 单条商品 */
+}
+.order-item .i-top {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  padding-right: 30rpx;
+  font-size: 28rpx;
+  color: #303133;
+  position: relative;
+}
+.order-item .i-top .time {
+  flex: 1;
+}
+.order-item .i-top .state {
+  color: #fa436a;
+}
+.order-item .goods-box {
+  height: 160rpx;
+  padding: 20rpx 0;
+  white-space: nowrap;
+}
+.order-item .goods-box .goods-item {
+  width: 120rpx;
+  height: 120rpx;
+  display: inline-block;
+  margin-right: 24rpx;
+}
+.order-item .goods-box .goods-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.order-item .goods-box-single {
+  display: flex;
+  padding: 20rpx 0;
+}
+.order-item .goods-box-single .goods-img {
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+}
+.order-item .goods-box-single .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx 0 24rpx;
+  overflow: hidden;
+}
+.order-item .goods-box-single .right .title {
+  font-size: 30rpx;
+  color: #303133;
+  line-height: 1;
+}
+.order-item .goods-box-single .right .attr-box {
+  font-size: 26rpx;
+  color: #909399;
+  padding: 10rpx 12rpx;
+}
+.order-item .goods-box-single .right .price {
+  font-size: 30rpx;
+  color: #303133;
+}
+.order-item .goods-box-single .right .price:before {
+  content: '￥';
+  font-size: 24rpx;
+  margin: 0 2rpx 0 8rpx;
+}
+.order-item .price-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+  color: #909399;
+}
+.order-item .price-box .num {
+  margin: 0 8rpx;
+  color: #303133;
+}
+.order-item .price-box .price {
+  font-size: 32rpx;
+  color: #303133;
+}
+.order-item .price-box .price:before {
+  content: '￥';
+  font-size: 24rpx;
+  margin: 0 2rpx 0 8rpx;
+}
+.aftersale-image {
+  background-color: #fff;
+  font-size: 30rpx;
+  color: #303133;
+  margin: 20rpx 0;
+  padding: 30rpx;
+}
+.aftersale-desc {
+  background-color: #fff;
+  font-size: 30rpx;
+  color: #303133;
+  margin: 20rpx 0;
+  padding: 30rpx;
+}
+.b-b {
+  margin-top: 20rpx;
+}
+.row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 30rpx;
+  height: 110rpx;
+  background: #fff;
+}
+.row .tit {
+  flex-shrink: 0;
+  width: 160rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+.row .input {
+  flex: 1;
+  font-size: 30rpx;
+  color: #303133;
+}
+.row .input label {
+  margin-left: 20rpx;
+}
+.row .icon-shouhuodizhi {
+  font-size: 36rpx;
+  color: #909399;
+}
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 690rpx;
+  height: 80rpx;
+  margin: 60rpx auto;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #09b980;
+  border-radius: 10rpx;
+  box-shadow: 1px 2px 5px #09b980;
+}
+

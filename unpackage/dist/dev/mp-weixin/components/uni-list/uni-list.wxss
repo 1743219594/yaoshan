@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.uni-list.data-v-34219f38 {
+  display: flex;
+  background-color: #ffffff;
+  position: relative;
+  flex-direction: column;
+}
+.uni-list.data-v-34219f38:before {
+  height: 0;
+}
+.uni-list.data-v-34219f38:after {
+  height: 0;
+}
+

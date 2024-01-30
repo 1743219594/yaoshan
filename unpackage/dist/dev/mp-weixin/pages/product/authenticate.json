@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "产品认证申请",
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+image.data-v-b36130f2 {
+  display: inline-block;
+  will-change: transform;
+}
+view.data-v-b36130f2,
+text.data-v-b36130f2 {
+  box-sizing: border-box;
+}
+.u-avatar.data-v-b36130f2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #606266;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.u-avatar-img.data-v-b36130f2 {
+  width: 100%;
+  height: 100%;
+}
+

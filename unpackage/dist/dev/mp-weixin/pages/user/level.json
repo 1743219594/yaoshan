@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "会员等级",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag"
+  }
+}

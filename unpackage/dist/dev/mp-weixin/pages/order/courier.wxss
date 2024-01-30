@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background: #f8f8f8;
+  padding-bottom: 100rpx;
+}
+.courier-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 20rpx;
+}
+.courier-info .row {
+  margin: 6rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.courier-info .row .label {
+  color: #909399;
+  font-size: 24rpx;
+}
+.courier-info .row .value {
+  color: #303133;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.time-list {
+  padding: 20rpx 30rpx 0 30rpx;
+}
+

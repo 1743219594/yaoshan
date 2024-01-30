@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background: #f8f8f8;
+  padding-bottom: 160rpx;
+}
+.icon-you {
+  font-size: 30rpx;
+  color: #888;
+}
+/* 评价 */
+.eva-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx 20rpx 30rpx;
+}
+.eva-section .eva-section-item {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 10rpx;
+}
+.eva-section .e-header {
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  font-size: 26rpx;
+  color: #909399;
+}
+.eva-section .e-header .tit {
+  font-size: 30rpx;
+  color: #303133;
+  margin-right: 4rpx;
+}
+.eva-section .e-header .tip {
+  flex: 1;
+  text-align: right;
+}
+.eva-section .e-header .icon-you {
+  margin-left: 10rpx;
+}
+.eva-box {
+  display: flex;
+  padding: 20rpx 0;
+}
+.eva-box .portrait {
+  flex-shrink: 0;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100px;
+}
+.eva-box .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: #606266;
+  padding-left: 26rpx;
+}
+.eva-box .right .star {
+  display: flex;
+}
+.eva-box .right .star image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.eva-box .right .con {
+  font-size: 28rpx;
+  color: #303133;
+  padding: 20rpx 0;
+}
+.eva-box .right .bot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #909399;
+}
+.eva-image {
+  display: flex;
+}
+.eva-image image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+.eva-reply {
+  background-color: #F8F8F8;
+  color: #909399;
+  font-size: 28rpx;
+  padding: 10rpx;
+  margin: 20rpx 0;
+  border-radius: 20rpx;
+}
+

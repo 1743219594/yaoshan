@@ -1,0 +1,53 @@
+
+.mix-refresh-content{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+/* 下拉刷新部分 */
+.mix-loading-wrapper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.mix-loading-icon{
+	width: 70rpx;
+	height: 70rpx;
+	transition: .3s;
+}
+.mix-loading-icon.ready{
+	-webkit-transform: scaleX(1.3);
+	        transform: scaleX(1.3);
+}
+.mix-loading-icon.active{
+	-webkit-animation: loading .5s ease-in infinite both alternate;
+	        animation: loading .5s ease-in infinite both alternate;
+}
+@-webkit-keyframes loading {
+0% {
+		-webkit-transform: translateY(-20rpx) scaleX(1);
+		        transform: translateY(-20rpx) scaleX(1);
+}
+100% {
+		-webkit-transform: translateY(4rpx)  scaleX(1.3);
+		        transform: translateY(4rpx)  scaleX(1.3);
+}
+}
+@keyframes loading {
+0% {
+		-webkit-transform: translateY(-20rpx) scaleX(1);
+		        transform: translateY(-20rpx) scaleX(1);
+}
+100% {
+		-webkit-transform: translateY(4rpx)  scaleX(1.3);
+		        transform: translateY(4rpx)  scaleX(1.3);
+}
+}
+
+

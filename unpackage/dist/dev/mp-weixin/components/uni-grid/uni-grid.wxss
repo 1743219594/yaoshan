@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.uni-grid-wrap.data-v-63102d64 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.uni-grid.data-v-63102d64 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.uni-grid--border.data-v-63102d64 {
+  border-left-color: #c8c7cc;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.container {
+  padding: 10px;
+  background-color: #f1f3f4;
+  padding-bottom: 55px;
+}
+.btn {
+  position: fixed;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  top: calc(100vh - 55px);
+  width: 100vw;
+  background-color: #09b980;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.card {
+  background-color: white;
+  padding: 10px 20px 20px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.card .producutName {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.card .producutShop {
+  font-weight: bold;
+  margin: 10px 0;
+  display: flex;
+}
+.card .producutShop .tip {
+  height: 20px;
+  width: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: #62cd6d;
+}
+.card .producutImage {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.card .producutImage image {
+  height: 100px;
+  width: 80px;
+}
+.card .prompt {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #bfbfbf;
+}
+

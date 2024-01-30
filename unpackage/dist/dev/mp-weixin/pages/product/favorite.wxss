@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/* 按钮颜色 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page,
+.content {
+  background: #f8f8f8;
+}
+.hot-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30rpx;
+  margin-top: 16rpx;
+  background: #fff;
+}
+.hot-section .guess-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 40rpx;
+}
+.hot-section .image-wrapper {
+  width: 30%;
+  height: 250rpx;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.hot-section .image-wrapper image {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.hot-section .title {
+  font-size: 32rpx;
+  color: #303133;
+  line-height: 80rpx;
+}
+.hot-section .title2 {
+  font-size: 24rpx;
+  color: #909399;
+  line-height: 40rpx;
+  height: 80rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.hot-section .price {
+  font-size: 32rpx;
+  color: #fa436a;
+  line-height: 80rpx;
+}
+.hot-section .txt {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40rpx;
+}
+.hot-section .hor-txt {
+  display: flex;
+  justify-content: space-between;
+}
+.hot-section .time {
+  font-size: 24rpx;
+  color: #303133;
+  line-height: 80rpx;
+}
+
