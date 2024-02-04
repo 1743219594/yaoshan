@@ -235,16 +235,19 @@
 			//商品列表页
 			navToList(index) {
 				this.$api.request.productCate({}, res => {
+					
 					if (res.code === 200) {
 						 this.categoryList = res.data
+						 const productCategoryId = this.categoryList[index].children[0].id
+						 uni.navigateTo({
+						 	url: '/pages/product/list?productCategoryId=' + productCategoryId
+						 })
 					} else {
 						this.$api.msg(res.message)
 					}
 				})
-				const productCategoryId = this.categoryList[index].children[0].id
-				uni.navigateTo({
-					url: '/pages/product/list?productCategoryId=' + productCategoryId
-				})
+				
+				
 			},
 			// 知识学习
 			navStudy: function() {

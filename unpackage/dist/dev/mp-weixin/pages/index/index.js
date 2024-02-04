@@ -101,13 +101,13 @@ var components
 try {
   components = {
     uniGrid: function () {
-      return __webpack_require__.e(/*! import() | components/uni-grid/uni-grid */ "components/uni-grid/uni-grid").then(__webpack_require__.bind(null, /*! @/components/uni-grid/uni-grid.vue */ 457))
+      return __webpack_require__.e(/*! import() | components/uni-grid/uni-grid */ "components/uni-grid/uni-grid").then(__webpack_require__.bind(null, /*! @/components/uni-grid/uni-grid.vue */ 464))
     },
     uniGridItem: function () {
-      return __webpack_require__.e(/*! import() | components/uni-grid-item/uni-grid-item */ "components/uni-grid-item/uni-grid-item").then(__webpack_require__.bind(null, /*! @/components/uni-grid-item/uni-grid-item.vue */ 464))
+      return __webpack_require__.e(/*! import() | components/uni-grid-item/uni-grid-item */ "components/uni-grid-item/uni-grid-item").then(__webpack_require__.bind(null, /*! @/components/uni-grid-item/uni-grid-item.vue */ 471))
     },
     uniPopup: function () {
-      return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup */ "components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup.vue */ 471))
+      return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup */ "components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup.vue */ 478))
     },
   }
 } catch (e) {
@@ -178,12 +178,12 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var uniPopup = function uniPopup() {
   __webpack_require__.e(/*! require.ensure | components/uni-popup/uni-popup */ "components/uni-popup/uni-popup").then((function () {
-    return resolve(__webpack_require__(/*! @/components/uni-popup/uni-popup.vue */ 471));
+    return resolve(__webpack_require__(/*! @/components/uni-popup/uni-popup.vue */ 478));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var shareByWx = function shareByWx() {
   __webpack_require__.e(/*! require.ensure | components/share/shareByWx */ "components/share/shareByWx").then((function () {
-    return resolve(__webpack_require__(/*! @/components/share/shareByWx.vue */ 478));
+    return resolve(__webpack_require__(/*! @/components/share/shareByWx.vue */ 485));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -308,13 +308,13 @@ var _default = {
       this.$api.request.productCate({}, function (res) {
         if (res.code === 200) {
           _this.categoryList = res.data;
+          var productCategoryId = _this.categoryList[index].children[0].id;
+          uni.navigateTo({
+            url: '/pages/product/list?productCategoryId=' + productCategoryId
+          });
         } else {
           _this.$api.msg(res.message);
         }
-      });
-      var productCategoryId = this.categoryList[index].children[0].id;
-      uni.navigateTo({
-        url: '/pages/product/list?productCategoryId=' + productCategoryId
       });
     },
     // 知识学习
@@ -454,7 +454,7 @@ var components
 try {
   components = {
     uniLoadMore: function () {
-      return __webpack_require__.e(/*! import() | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then(__webpack_require__.bind(null, /*! @/components/uni-load-more/uni-load-more.vue */ 442))
+      return __webpack_require__.e(/*! import() | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then(__webpack_require__.bind(null, /*! @/components/uni-load-more/uni-load-more.vue */ 449))
     },
   }
 } catch (e) {
@@ -522,7 +522,7 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 80));
 var uniLoadMore = function uniLoadMore() {
   __webpack_require__.e(/*! require.ensure | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then((function () {
-    return resolve(__webpack_require__(/*! @/components/uni-load-more/uni-load-more.vue */ 442));
+    return resolve(__webpack_require__(/*! @/components/uni-load-more/uni-load-more.vue */ 449));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

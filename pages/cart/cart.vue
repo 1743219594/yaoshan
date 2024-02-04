@@ -103,7 +103,7 @@ import { login } from '../../config/api';
 					return;
 				}
 				this.$api.request.cartList({}, res => {
-					console.log(res.data);
+					
 					let list = res.data;
 					let cartList = list.map(item => {
 						item.checked = true;
@@ -119,9 +119,9 @@ import { login } from '../../config/api';
 								spDataStr += ";";
 							}
 							item.spDataStr = spDataStr;
-							return item;
+							
 						}
-						
+						return item;
 						
 					});
 					this.cartList = cartList;

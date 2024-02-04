@@ -99,7 +99,6 @@
 					this.productList = [];
 				}
 				this.$api.request.fetchProductCollectionList(this.searchParam,res=>{
-					console.log(res);
 					let dataList = res.data.list;
 					if (dataList.length === 0) {
 						//没有更多了

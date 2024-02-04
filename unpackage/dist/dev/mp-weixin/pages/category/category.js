@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/category/category"],{
 
-/***/ 357:
+/***/ 364:
 /*!*************************************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/main.js?{"page":"pages%2Fcategory%2Fcategory"} ***!
   \*************************************************************************************************/
@@ -101,7 +101,7 @@ var components
 try {
   components = {
     uniLoadMore: function () {
-      return __webpack_require__.e(/*! import() | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then(__webpack_require__.bind(null, /*! @/components/uni-load-more/uni-load-more.vue */ 442))
+      return __webpack_require__.e(/*! import() | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then(__webpack_require__.bind(null, /*! @/components/uni-load-more/uni-load-more.vue */ 449))
     },
   }
 } catch (e) {
@@ -169,7 +169,7 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 80));
 var uniLoadMore = function uniLoadMore() {
   __webpack_require__.e(/*! require.ensure | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then((function () {
-    return resolve(__webpack_require__(/*! @/components/uni-load-more/uni-load-more.vue */ 442));
+    return resolve(__webpack_require__(/*! @/components/uni-load-more/uni-load-more.vue */ 449));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -404,5 +404,5 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-},[[357,"common/runtime","common/vendor"]]]);
+},[[364,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/category/category.js.map

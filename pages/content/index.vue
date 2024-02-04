@@ -193,6 +193,7 @@
 					showStatus: 1
 				}
 				this.$api.request.articleList(params, function(res) {
+					
 					let newsList = res.data.list;
 					let total = res.data.total;
 					tabItem.newsList = tabItem.newsList.concat(newsList);

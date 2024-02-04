@@ -148,6 +148,7 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 var _htmlParser = _interopRequireDefault(__webpack_require__(/*! @/config/html-parser */ 107));
 var _vuex = __webpack_require__(/*! vuex */ 28);
 var _util = __webpack_require__(/*! @/config/util.js */ 41);
+var _api = __webpack_require__(/*! ../../config/api */ 42);
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
@@ -155,7 +156,7 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var share = function share() {
   __webpack_require__.e(/*! require.ensure | components/share */ "components/share").then((function () {
-    return resolve(__webpack_require__(/*! @/components/share */ 485));
+    return resolve(__webpack_require__(/*! @/components/share */ 492));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var defaultServiceList = [{
@@ -245,10 +246,11 @@ var _default = {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
+                console.log(id);
                 method = "product/detail/" + id;
                 _this2.$api.request.fetchProductDetail(method, {}, function (response) {
-                  console.log(response);
                   _this2.product = response.data.product;
+                  console.log(_this2.product);
                   _this2.skuStockList = response.data.skuStockList;
                   _this2.brand.id = response.data.product.brandId;
                   _this2.brand.brandName = response.data.product.brandName;
@@ -260,7 +262,7 @@ var _default = {
                   _this2.handleReadHistory();
                   _this2.initProductCollection();
                 });
-              case 2:
+              case 3:
               case "end":
                 return _context2.stop();
             }
@@ -438,6 +440,7 @@ var _default = {
           availAbleSpecSet.add(spDataArr[j].value);
         }
       }
+
       // 根据商品sku筛选出可用规格
       this.specChildList = this.specChildList.filter(function (item) {
         return availAbleSpecSet.has(item.name);

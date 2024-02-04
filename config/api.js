@@ -274,7 +274,9 @@ const get = (method, data, callback, hideLoading) => {
 		},
 		fail: (error) => {
 			uni.hideLoading();
+			console.log(error);
 			if (error && error.response) {
+				
 				showError(error.response);
 			}
 		},
@@ -505,7 +507,9 @@ export const nextUserLevel = (data, callback, hideLoading) => post('consumer/nex
 // 获取邀请的会员
 export const invitedUser = (data, callback, hideLoading) => post('consumer/inquiryInvitedUsers', data, callback,
 	hideLoading);
-
+//获取入住商家
+export const fetchBrandRecommendList = (data, callback, hideLoading) => get('brand/recommendList', data, callback,
+	hideLoading);
 // 编辑用户信息
 export const editInfo = (data, callback, hideLoading) => post('consumer/updateUserField', data, callback, hideLoading);
 

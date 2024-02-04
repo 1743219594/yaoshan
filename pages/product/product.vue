@@ -193,6 +193,7 @@
 	import {
 		formatDate
 	} from '@/config/util.js';
+import { login } from '../../config/api';
 	const defaultServiceList = [{
 		id: 1,
 		name: "7天无理由退货"
@@ -265,11 +266,12 @@
 		methods: {
 			// 获取数据
 			async loadData(id) {
+				console.log(id);
 				var method = "product/detail/" + id
+				
 				this.$api.request.fetchProductDetail(method, {}, response => {
-					console.log(response);
 					this.product = response.data.product;
-					
+					console.log(this.product);
 					this.skuStockList = response.data.skuStockList;
 					this.brand.id = response.data.product.brandId;
 					this.brand.brandName = response.data.product.brandName
@@ -396,6 +398,7 @@
 			},
 			//设置商品规格
 			initSpecList(data) {
+				
 				for (let i = 0; i < data.productAttributeList.length; i++) {
 					let item = data.productAttributeList[i];
 					if (item.type == 0) {
@@ -403,6 +406,7 @@
 							id: item.id,
 							name: item.name
 						});
+						
 						if (item.handAddStatus == 1) {
 							//支持手动新增的
 							let valueList = data.productAttributeValueList;
@@ -428,13 +432,16 @@
 						}
 					}
 				}
+				
 				let availAbleSpecSet = new Set();
 				for (let i = 0; i < this.skuStockList.length; i++) {
 					let spDataArr = JSON.parse(this.skuStockList[i].spData);
+					
 					for (let j = 0; j < spDataArr.length; j++) {
 						availAbleSpecSet.add(spDataArr[j].value);
 					}
 				}
+			
 				// 根据商品sku筛选出可用规格
 				this.specChildList = this.specChildList.filter(item => {
 					return availAbleSpecSet.has(item.name)

@@ -60,8 +60,8 @@
 					this.searchParam.pageNum=1;
 					this.brandList = [];
 				}
-				this.$api.request.nearbyMerchant()
-				this.$api.request.fetchBrandRecommendList(this.searchParam).then(response => {
+				//this.$api.request.nearbyMerchant()
+				this.$api.request.fetchBrandRecommendList(this.searchParam,(response) => {
 					let prandList = response.data;
 					if (response.data.length === 0) {
 						//没有更多了
@@ -89,7 +89,7 @@
 			navToDetailPage(item) {
 				let id = item.id;
 				uni.navigateTo({
-					url: `/pages/brand/brandDetail?id=${id}`
+					url: `/pages/brand/brandList?id=${id}`
 				})
 			},
 			stopPrevent() {}

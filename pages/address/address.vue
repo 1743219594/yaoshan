@@ -37,7 +37,8 @@
 			}
 		},
 		onLoad(option) {
-			console.log(option.source);
+			
+			
 			this.source = option.source;
 			this.loadData();
 		},
@@ -49,8 +50,10 @@
 			async loadData() {
 				this.$api.request.userShip({
 				}, res => {
+					
 					if (res.code === 200) {
 						this.addressList = res.data;
+						
 					} else {
 						this.$api.msg(res.message);
 					}
@@ -65,6 +68,7 @@
 				}
 			},
 			addAddress(type, item) {
+				console.log(item)
 				if (type == 'edit') {
 					uni.navigateTo({
 						url: `/pages/address/addressManage?type=${type}&id=${item.id}`
@@ -77,6 +81,7 @@
 			},
 			//处理删除地址
 			handleDeleteAddress(id) {
+				
 				let superThis = this;
 				var method = 'consumer/address/deleteUserDeliveryAddress'
 				uni.showModal({
@@ -87,8 +92,6 @@
 							superThis.$api.request.removeShip(method,id,res =>{
 								superThis.loadData();
 							})
-						} else if (res.cancel) {
-							console.log('用户点击取消');
 						}
 					}
 				});

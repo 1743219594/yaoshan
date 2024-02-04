@@ -2082,7 +2082,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -9125,7 +9125,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -9146,14 +9146,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9249,7 +9249,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"药食同源大健康","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -11997,8 +11997,8 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.searchProductList = exports.searchProduct = exports.searchOrderTotal = exports.searchOrder = exports.searchAfterSaleTotal = exports.searchAfterSale = exports.saveUserShip = exports.resetPassword = exports.removeShip = exports.removeCart = exports.reg = exports.receiveProfitWelfare = exports.qaList = exports.proveProductList = exports.productGroupForRegister = exports.productGroup = exports.productCollectionDetail = exports.productCateAddInfo = exports.productCate = exports.productByCardIds = exports.pointStatementList = exports.payOrderSuccess = exports.orderPaymentAmount = exports.orderDetail = exports.nextUserLevel = exports.nearbyMerchant = exports.merchantList = exports.merchantDetail = exports.merchantCouponList = exports.markNoteRead = exports.login = exports.isPointSigned = exports.isMerchantFollowed = exports.invitedUser = exports.inquiryTag = exports.inquiryProfitWelfare = exports.inquiryNotes = exports.inquiryCity = exports.inquiryArticle = exports.hotQaList = exports.homeProductCate = exports.home = exports.groupBuyDetail = exports.groupBuy = exports.goodsPoster = exports.goodsList = exports.goodsDetail = exports.goodsComment = exports.getStatementList = exports.getSignature = exports.getPerformanceList = exports.getParameter = exports.getOpenIdByCode4OfficialAccount = exports.getGroupBuyByProduct = exports.getCartNum = exports.getBrandDetail = exports.generateConfirmOrder = exports.followedMerchant = exports.followMerchant = exports.fetchProductDetail = exports.fetchProductCollectionList = exports.fetchOrderList = exports.fetchOrderDetail = exports.fetchBrandProductList = exports.fetchAddressDetail = exports.enableNotification = exports.editInfo = exports.disableNotification = exports.delOrder = exports.createReadHistory = exports.createOrder = exports.courierAfterSale = exports.confirmOrder = exports.commentOrder = exports.collectProduct = exports.clearProductCollection = exports.clearCart = exports.changePassword = exports.cashList = exports.cartList = exports.cancelOrder = exports.cancelFollowMerchant = exports.cancelCollectProduct = exports.cancelAfterSale = exports.calculateFreightAmount = exports.balancePay = exports.articleList = exports.articleInfo = exports.approveApplication = exports.applyAfterSale = exports.apiByAdmin = exports.apiBaseUrl = exports.alipayApp = exports.alipay = exports.afterSalesInfo = exports.advert = exports.addCart = exports.addAddress = exports.activityList = exports.acitivityInfo = void 0;
-exports.wxSuscribeMsg = exports.withdrawDetail = exports.wechatPayH5 = exports.wechatPayApp = exports.wechatPay = exports.verifyCode = exports.userToCash = exports.userShip = exports.userInfo = exports.uploadImage = exports.uploadFiles = exports.updateQuantity = exports.updateAfterSale = exports.updateAddress = exports.test = exports.sms = exports.slider = exports.signSetting = exports.signPoint = exports.signDateNum = exports.setCartNum = exports.seckillQuanId = exports.secKillDetail = exports.secKill = void 0;
+exports.searchProduct = exports.searchOrderTotal = exports.searchOrder = exports.searchAfterSaleTotal = exports.searchAfterSale = exports.saveUserShip = exports.resetPassword = exports.removeShip = exports.removeCart = exports.reg = exports.receiveProfitWelfare = exports.qaList = exports.proveProductList = exports.productGroupForRegister = exports.productGroup = exports.productCollectionDetail = exports.productCateAddInfo = exports.productCate = exports.productByCardIds = exports.pointStatementList = exports.payOrderSuccess = exports.orderPaymentAmount = exports.orderDetail = exports.nextUserLevel = exports.nearbyMerchant = exports.merchantList = exports.merchantDetail = exports.merchantCouponList = exports.markNoteRead = exports.login = exports.isPointSigned = exports.isMerchantFollowed = exports.invitedUser = exports.inquiryTag = exports.inquiryProfitWelfare = exports.inquiryNotes = exports.inquiryCity = exports.inquiryArticle = exports.hotQaList = exports.homeProductCate = exports.home = exports.groupBuyDetail = exports.groupBuy = exports.goodsPoster = exports.goodsList = exports.goodsDetail = exports.goodsComment = exports.getStatementList = exports.getSignature = exports.getPerformanceList = exports.getParameter = exports.getOpenIdByCode4OfficialAccount = exports.getGroupBuyByProduct = exports.getCartNum = exports.getBrandDetail = exports.generateConfirmOrder = exports.followedMerchant = exports.followMerchant = exports.fetchProductDetail = exports.fetchProductCollectionList = exports.fetchOrderList = exports.fetchOrderDetail = exports.fetchBrandRecommendList = exports.fetchBrandProductList = exports.fetchAddressDetail = exports.enableNotification = exports.editInfo = exports.disableNotification = exports.delOrder = exports.createReadHistory = exports.createOrder = exports.courierAfterSale = exports.confirmOrder = exports.commentOrder = exports.collectProduct = exports.clearProductCollection = exports.clearCart = exports.changePassword = exports.cashList = exports.cartList = exports.cancelOrder = exports.cancelFollowMerchant = exports.cancelCollectProduct = exports.cancelAfterSale = exports.calculateFreightAmount = exports.balancePay = exports.articleList = exports.articleInfo = exports.approveApplication = exports.applyAfterSale = exports.apiByAdmin = exports.apiBaseUrl = exports.alipayApp = exports.alipay = exports.afterSalesInfo = exports.advert = exports.addCart = exports.addAddress = exports.activityList = exports.acitivityInfo = void 0;
+exports.wxSuscribeMsg = exports.withdrawDetail = exports.wechatPayH5 = exports.wechatPayApp = exports.wechatPay = exports.verifyCode = exports.userToCash = exports.userShip = exports.userInfo = exports.uploadImage = exports.uploadFiles = exports.updateQuantity = exports.updateAfterSale = exports.updateAddress = exports.test = exports.sms = exports.slider = exports.signSetting = exports.signPoint = exports.signDateNum = exports.setCartNum = exports.seckillQuanId = exports.secKillDetail = exports.secKill = exports.searchProductList = void 0;
 var apiBaseUrl = 'http://8.138.108.210:8085/';
 exports.apiBaseUrl = apiBaseUrl;
 var apiByAdmin = 'http://8.138.108.210:8080/';
@@ -12189,6 +12189,7 @@ var get = function get(method, data, callback, hideLoading) {
     },
     fail: function fail(error) {
       uni.hideLoading();
+      console.log(error);
       if (error && error.response) {
         showError(error.response);
       }
@@ -12437,9 +12438,13 @@ exports.nextUserLevel = nextUserLevel;
 var invitedUser = function invitedUser(data, callback, hideLoading) {
   return post('consumer/inquiryInvitedUsers', data, callback, hideLoading);
 };
-
-// 编辑用户信息
+//获取入住商家
 exports.invitedUser = invitedUser;
+var fetchBrandRecommendList = function fetchBrandRecommendList(data, callback, hideLoading) {
+  return get('brand/recommendList', data, callback, hideLoading);
+};
+// 编辑用户信息
+exports.fetchBrandRecommendList = fetchBrandRecommendList;
 var editInfo = function editInfo(data, callback, hideLoading) {
   return post('consumer/updateUserField', data, callback, hideLoading);
 };
@@ -14535,7 +14540,46 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 623:
+/***/ 63:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/node_modules/uview-ui/libs/function/getParent.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = getParent;
+// 获取父组件的参数，因为支付宝小程序不支持provide/inject的写法
+// this.$parent在非H5中，可以准确获取到父组件，但是在H5中，需要多次this.$parent.$parent.xxx
+function getParent(name, keys) {
+  var parent = this.$parent;
+  // 通过while历遍，这里主要是为了H5需要多层解析的问题
+  while (parent) {
+    // 父组件
+    if (parent.$options.name !== name) {
+      // 如果组件的name不相等，继续上一级寻找
+      parent = parent.$parent;
+    } else {
+      var data = {};
+      // 历遍传过来的对象参数
+      for (var i in keys) {
+        // 如果父组件有此值则用，无此值则用默认值
+        data[i] = parent[i] ? parent[i] : keys[i];
+      }
+      return data;
+    }
+  }
+  return {};
+}
+
+/***/ }),
+
+/***/ 630:
 /*!********************************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/components/w-picker/city-data/province.js ***!
   \********************************************************************************************/
@@ -14658,7 +14702,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 624:
+/***/ 631:
 /*!****************************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/components/w-picker/city-data/city.js ***!
   \****************************************************************************************/
@@ -15779,7 +15823,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 625:
+/***/ 632:
 /*!****************************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/components/w-picker/city-data/area.js ***!
   \****************************************************************************************/
@@ -24898,7 +24942,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 626:
+/***/ 633:
 /*!**********************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/components/w-picker/w-picker.js ***!
   \**********************************************************************************/
@@ -25624,45 +25668,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 63:
-/*!***************************************************************************************************!*\
-  !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/node_modules/uview-ui/libs/function/getParent.js ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = getParent;
-// 获取父组件的参数，因为支付宝小程序不支持provide/inject的写法
-// this.$parent在非H5中，可以准确获取到父组件，但是在H5中，需要多次this.$parent.$parent.xxx
-function getParent(name, keys) {
-  var parent = this.$parent;
-  // 通过while历遍，这里主要是为了H5需要多层解析的问题
-  while (parent) {
-    // 父组件
-    if (parent.$options.name !== name) {
-      // 如果组件的name不相等，继续上一级寻找
-      parent = parent.$parent;
-    } else {
-      var data = {};
-      // 历遍传过来的对象参数
-      for (var i in keys) {
-        // 如果父组件有此值则用，无此值则用默认值
-        data[i] = parent[i] ? parent[i] : keys[i];
-      }
-      return data;
-    }
-  }
-  return {};
-}
-
-/***/ }),
-
 /***/ 64:
 /*!**********************************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/node_modules/uview-ui/libs/config/config.js ***!
@@ -25725,7 +25730,30 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 655:
+/***/ 66:
+/*!**********************************************************!*\
+  !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/Json.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/* 静态数据可以放入本文件进行引用*/
+var tabList = [];
+var _default = {
+  tabList: tabList
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 662:
 /*!********************************************************************************!*\
   !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/components/uni-icons/icons.js ***!
   \********************************************************************************/
@@ -25834,29 +25862,6 @@ var _default = {
   'closefill': "\uE589",
   'sound': "\uE590",
   'scan': "\uE612"
-};
-exports.default = _default;
-
-/***/ }),
-
-/***/ 66:
-/*!**********************************************************!*\
-  !*** C:/Users/17432/Desktop/mafh-miniprogram(1)/Json.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-/* 静态数据可以放入本文件进行引用*/
-var tabList = [];
-var _default = {
-  tabList: tabList
 };
 exports.default = _default;
 
